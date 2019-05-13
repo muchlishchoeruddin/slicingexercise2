@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Mrs+Sheppards|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  padding-right: 2em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-toggler {
+  font-size: 1.2rem;
+  outline: none;
+  color: #777;
+  transition: all 0.3s ease;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+.navbar .medsos {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  margin-top: 2.4em;
+  margin-right: 2em;
+}
+.navbar .medsos a {
+  text-decoration: none;
+  color: #777;
+  font-size: 0.9em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  transition: all 0.2s ease;
+}
+.navbar .medsos a:hover {
+  color: #b59f5b;
+}
+.navbar .collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+.navbar .collapse:not(.show) .navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+.navbar .collapse:not(.show) .navbar-nav .nav-item .nav-link {
+  font-size: 1vw;
+  font-weight: 600;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.navbar .collapse:not(.show) .navbar-nav .active .nav-link {
+  color: #b59f5b !important;
+}
+@media (max-width: 992px) {
+  .navbar .collapse {
+    background-color: rgba(181, 159, 91, 0.7);
+  }
+  .navbar .collapse .dropdown-toggle::after {
+    position: absolute;
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    right: 0;
+  }
+  .navbar .collapse .nav-item:hover {
+    background-color: rgba(196, 174, 105, 0.7);
+  }
+  .navbar .collapse .nav-item .nav-link {
+    padding-left: 0.5em;
+    color: white;
+  }
+  .navbar .collapse .nav-item .dropdown-menu {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+  .navbar .collapse .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+.header-page .header-title {
+  font-size: 4vw;
+  letter-spacing: 12px;
+}
+.header-page .border-ht {
+  width: 3.5vw;
+  border-bottom: 2px solid rgba(181, 159, 91, 0.5);
+  margin: auto;
+}
+.header-page .content-img {
+  position: absolute;
+  bottom: 0;
+  color: white !important;
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 4vw;
+  border: 2px solid rgba(181, 159, 91, 0.5);
+}
+.header-page .content-img h6 {
+  color: #b59f5b;
+  font-size: 0.8rem;
+}
+.header-page .content-img h4 {
+  font-size: 1.3em;
+}
+.header-page .content-img .fas {
+  color: #b59f5b;
+}
+.header-page .content-img .col-sm-6 {
+  font-size: 0.8rem;
+}
+@media (max-width: 1174px) {
+  .header-page .content-img h6 {
+    font-size: 0.4rem;
+  }
+  .header-page .content-img h4 {
+    font-size: 0.7rem;
+  }
+  .header-page .content-img .col-sm-6 {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 766px) {
+  .header-page .content-img h6 {
+    font-size: 0.8rem;
+  }
+  .header-page .content-img h4 {
+    font-size: 1.3em;
+  }
+  .header-page .content-img .col-md-6 {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .header-page .header-title {
+    font-size: 3em;
+  }
+  .header-page .border-ht {
+    width: 2em;
+  }
+}
+
+.list-blog .list h6 {
+  font-size: 0.8vw;
+  color: #b59f5b;
+}
+.list-blog .list h4 {
+  font-size: 1.4vw;
+}
+.list-blog .list b {
+  color: black;
+  padding-left: 20px;
+}
+.list-blog .list p {
+  font-size: 1vw;
+}
+.list-blog .list small {
+  font-size: 0.8vw;
+  color: #aaa;
+}
+.list-blog .list .absoluteaction {
+  position: absolute;
+  top: 0;
+  margin-left: -5.5em;
+  margin-top: -1.2em;
+  width: 120%;
+}
+.list-blog .list .absoluteaction .boxes {
+  height: 9em;
+  border: 2px solid rgba(181, 159, 91, 0.5);
+}
+.list-blog .list .absoluteaction .action {
+  width: 100%;
+  margin-top: 36%;
+  border-bottom: 3px solid #ccc;
+}
+.list-blog .list .absoluteaction .action i {
+  padding-left: 10px;
+}
+.list-blog .list .absoluteaction .action a {
+  color: #aaa;
+}
+.list-blog .list .absoluteaction .action a:hover {
+  color: #c4ae69;
+}
+@media (max-width: 992px) {
+  .list-blog .list h6 {
+    font-size: 0.4em;
+  }
+  .list-blog .list h4 {
+    font-size: 0.8em;
+  }
+  .list-blog .list b {
+    padding-left: 2em;
+  }
+  .list-blog .list p {
+    padding-top: 3em;
+    font-size: 0.6em;
+  }
+  .list-blog .list small {
+    font-size: 0.6em;
+  }
+  .list-blog .list .absoluteaction {
+    margin-left: -4.5em;
+  }
+  .list-blog .list .absoluteaction .boxes {
+    height: 7.2em;
+  }
+}
+@media (max-width: 576px) {
+  .list-blog .list .absoluteaction {
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+  }
+  .list-blog .list .absoluteaction .action {
+    margin-top: 30px;
+  }
+  .list-blog .list .boxes {
+    display: none;
+  }
+  .list-blog .list .list-article {
+    margin-top: 20px;
+  }
+  .list-blog .list .list-article h6 {
+    font-size: 0.8em;
+  }
+  .list-blog .list .list-article h4 {
+    font-size: 1em;
+  }
+  .list-blog .list .list-article p {
+    font-size: 0.8em;
+    padding-top: -1em;
+  }
+  .list-blog .list img {
+    width: 100%;
+  }
+}
+.list-blog .information .sectionaboutme .profileimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 35px;
+}
+.list-blog .information .sectionaboutme .profileimg img {
+  width: 12em;
+}
+@media (max-width: 992px) {
+  .list-blog .information .sectionaboutme .profileimg img {
+    width: 7em;
+  }
+  .list-blog .information .sectionaboutme .aboutme {
+    margin-top: 2em !important;
+  }
+}
+.list-blog .information .sectionaboutme .aboutme {
+  padding-top: 7em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  border: 2px solid rgba(181, 159, 91, 0.5);
+  margin-top: 6em;
+}
+.list-blog .information .sectionaboutme .aboutme h4 {
+  font-weight: 800;
+  font-size: 1em;
+}
+.list-blog .information .sectionaboutme .aboutme p {
+  color: #777;
+  font-weight: 600;
+}
+.list-blog .information .sectionaboutme .aboutme h5 {
+  font-family: "Mrs Sheppards", cursive;
+  color: #b59f5b;
+  font-size: 1.5em;
+}
+.list-blog .information .sectionaboutme .aboutme .aboutmeicon a {
+  color: #777;
+  transition: all 0.3s ease;
+}
+.list-blog .information .sectionaboutme .aboutme .aboutmeicon a:hover {
+  color: #c4ae69;
+}
+.list-blog .information .newsletter input[type=submit] {
+  background-color: #b59f5b;
+  color: white;
+  cursor: pointer;
+}
+.list-blog .information .newsletter input[type=submit]:hover {
+  background-color: #c4ae69;
+}
+.list-blog .information .categories small {
+  font-weight: 600;
+  color: #b59f5b;
+  position: absolute;
+  margin-left: 10px;
+}
+.list-blog .information .recentpost small {
+  color: #777;
+}
+.list-blog .information .recentpost h6 {
+  font-size: 0.8em;
+}
+.list-blog .information .recentpost .inputicon {
+  background-color: #b59f5b;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  margin-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+  cursor: pointer;
+}
+.list-blog .information .recentpost .inputicon:hover {
+  background-color: #c4ae69;
+}
+.list-blog .information .tags .tag-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 2px;
+  font-size: 0.8em;
+  border: 2px solid rgba(181, 159, 91, 0.3);
+}
+
+.promotion b {
+  font-family: "Mrs Sheppards", cursive;
+  color: #b59f5b;
+}
+.promotion img {
+  width: 210px;
+  height: 210px;
+}
+.promotion .footericon a {
+  color: black;
+}
+.promotion .footericon a:hover {
+  color: #c4ae69;
+}
+.promotion .ontop {
+  font-family: "Mrs Sheppards", cursive;
+  font-size: 2em;
+  color: #b59f5b;
+}
+.promotion .copyright {
+  color: #777;
+}
+
+/*# sourceMappingURL=style.css.map */
