@@ -59,7 +59,7 @@ html {
   padding-right: 1em;
 }
 .navbar .collapse:not(.show) .navbar-nav .active .nav-link {
-  color: #b59f5b !important;
+  color: #b59f5b;
 }
 @media (max-width: 992px) {
   .navbar .collapse {
@@ -93,12 +93,37 @@ html {
   font-size: 4vw;
   letter-spacing: 12px;
 }
+.header-page .header-title a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.header-page .header-title a:hover {
+  color: #c4ae69;
+}
+.header-page .col-md-4 {
+  overflow: hidden;
+  cursor: pointer;
+}
+.header-page .col-md-4 .img-fluid {
+  transition: all 0.2s ease;
+}
+.header-page .col-md-4 .w-100 {
+  transition: all 0.2s ease;
+}
+.header-page .col-md-4:hover .content-img {
+  margin-bottom: 5vw;
+}
+.header-page .col-md-4:hover .img-fluid {
+  transform: scale(1.02);
+}
 .header-page .border-ht {
   width: 3.5vw;
   border-bottom: 2px solid rgba(181, 159, 91, 0.5);
   margin: auto;
 }
 .header-page .content-img {
+  transition: all 0.2s ease;
   position: absolute;
   bottom: 0;
   color: white !important;
@@ -151,36 +176,85 @@ html {
   }
 }
 
-.list-blog .list h6 {
+.list-blog .list .article {
+  position: relative;
+  z-index: 5;
+}
+.list-blog .list .img-fluid {
+  transition: all 0.2s ease;
+}
+.list-blog .list .img-fluid:hover {
+  transform: scale(1.05);
+}
+.list-blog .list .list-article {
+  cursor: pointer;
+}
+.list-blog .list .list-article a {
+  text-decoration: none;
+}
+.list-blog .list .list-article a h6 {
   font-size: 0.8vw;
   color: #b59f5b;
 }
-.list-blog .list h4 {
+.list-blog .list .list-article a h4 {
   font-size: 1.4vw;
+  transition: all 0.2s ease;
+  color: black;
 }
-.list-blog .list b {
+.list-blog .list .list-article a b {
   color: black;
   padding-left: 20px;
 }
-.list-blog .list p {
+.list-blog .list .list-article a p {
   font-size: 1vw;
+  color: #777;
+  transition: all 0.2s ease;
 }
-.list-blog .list small {
+.list-blog .list .list-article a i {
+  color: #777;
+}
+.list-blog .list .list-article a small {
   font-size: 0.8vw;
   color: #aaa;
 }
+.list-blog .list .list-article:hover h4 {
+  color: #b59f5b;
+}
+.list-blog .list .list-article:hover p {
+  color: #c4ae69;
+}
+.list-blog .list .list-article:hover .article i {
+  color: #c4ae69;
+}
+.list-blog .list .list-article:hover .absoluteaction .boxes {
+  height: 16em;
+}
+.list-blog .list .list-article:hover .absoluteaction .action {
+  margin-top: 10%;
+}
+@media (max-width: 1200px) {
+  .list-blog .list .list-article:hover .absoluteaction .boxes {
+    height: 14em;
+  }
+  .list-blog .list .list-article:hover .absoluteaction .action {
+    margin-top: 6%;
+  }
+}
 .list-blog .list .absoluteaction {
   position: absolute;
+  z-index: 0;
   top: 0;
   margin-left: -5.5em;
   margin-top: -1.2em;
   width: 120%;
 }
 .list-blog .list .absoluteaction .boxes {
+  transition: all 0.2s ease;
   height: 9em;
   border: 2px solid rgba(181, 159, 91, 0.5);
 }
 .list-blog .list .absoluteaction .action {
+  transition: all 0.2s ease;
   width: 100%;
   margin-top: 36%;
   border-bottom: 3px solid #ccc;
@@ -247,6 +321,12 @@ html {
     width: 100%;
   }
 }
+.list-blog .information .sectionaboutme .instagram_gallery a img {
+  transition: all 0.2s ease;
+}
+.list-blog .information .sectionaboutme .instagram_gallery a:hover img {
+  transform: scale(1.04);
+}
 .list-blog .information .sectionaboutme .profileimg {
   position: absolute;
   top: 0;
@@ -301,11 +381,24 @@ html {
 .list-blog .information .newsletter input[type=submit]:hover {
   background-color: #c4ae69;
 }
+.list-blog .information .categories div {
+  cursor: pointer;
+  padding-left: 5px;
+}
+.list-blog .information .categories div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .list-blog .information .categories small {
   font-weight: 600;
   color: #b59f5b;
   position: absolute;
   margin-left: 10px;
+}
+.list-blog .information .banner a img {
+  transition: all 0.2s ease;
+}
+.list-blog .information .banner a:hover img {
+  transform: scale(1.05);
 }
 .list-blog .information .recentpost small {
   color: #777;
@@ -330,6 +423,8 @@ html {
   background-color: #c4ae69;
 }
 .list-blog .information .tags .tag-item {
+  transition: all 0.2s ease;
+  cursor: pointer;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 0.5em;
@@ -337,6 +432,9 @@ html {
   margin: 2px;
   font-size: 0.8em;
   border: 2px solid rgba(181, 159, 91, 0.3);
+}
+.list-blog .information .tags .tag-item:hover {
+  background-color: #c4ae69;
 }
 
 .promotion b {
@@ -346,6 +444,12 @@ html {
 .promotion img {
   width: 210px;
   height: 210px;
+}
+.promotion .instagram_gallery a img {
+  transition: all 0.2s ease;
+}
+.promotion .instagram_gallery a:hover img {
+  transform: scale(1.1);
 }
 .promotion .footericon a {
   color: black;

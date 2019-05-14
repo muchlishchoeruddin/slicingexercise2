@@ -80,7 +80,7 @@ html{
 				}
 				.active{
 					.nav-link{
-						color:$primary !important;			
+						color:$primary;			
 					}
 				}
 			}
@@ -127,6 +127,32 @@ html{
 	.header-title{
 		font-size: 4vw;
 		letter-spacing: 12px;
+		a{
+			color:black;
+			text-decoration: none;
+			transition: all .2s ease;
+			&:hover{
+				color:$phover;
+			}
+		}
+	}
+	.col-md-4{
+		overflow: hidden;
+		cursor: pointer;
+		.img-fluid{
+			transition: all .2s ease;
+		}
+		.w-100{
+			transition: all .2s ease;
+		}
+		&:hover{
+			.content-img{
+				margin-bottom:5vw;
+			}
+			.img-fluid{
+				transform: scale(1.02);
+			}
+		}
 	}
 	.border-ht{
 		width:3.5vw;
@@ -134,6 +160,7 @@ html{
 		margin:auto;
 	}
 	.content-img{
+		transition: all .2s ease;
 		position:absolute;
 		bottom:0;
 		color:white !important;
@@ -188,28 +215,84 @@ html{
 
 .list-blog{
 	.list{
-		h6{
-			font-size: 0.8vw;
-			color:$primary;
+		.article{
+			position:relative;
+			z-index: 5;
 		}
-		h4{
-			font-size: 1.4vw;
-		}
-		b{
-			color:black;
-			padding:{
-				left:20px;
+		.img-fluid{
+			transition: all .2s ease;
+			&:hover{
+				transform: scale(1.05);
 			}
 		}
-		p{
-			font-size: 1vw;
-		}
-		small{
-			font-size:0.8vw;
-			color:#aaa;
+		.list-article{
+			a{
+				text-decoration:none;
+				h6{
+					font-size: 0.8vw;
+					color:$primary;
+				}
+				h4{
+					font-size: 1.4vw;
+					transition: all .2s ease;
+					color:black;
+				}
+				b{
+					color:black;
+					padding:{
+						left:20px;
+					}
+				}
+				p{
+					font-size: 1vw;
+					color:#777;
+					transition: all .2s ease;
+				}
+				i{
+					color:#777;
+				}
+				small{
+					font-size:0.8vw;
+					color:#aaa;
+				}
+			}
+			cursor:pointer;
+			&:hover{
+				h4{
+					color:$primary;
+				}
+				p{
+					color:$phover;
+				}
+				.article{
+					i{
+						color:$phover;
+					}
+					
+				}
+				.absoluteaction{
+					.boxes{
+						height: 16em;
+					}
+					.action{
+						margin-top:10%;
+					}
+				}
+				@media(max-width: 1200px){
+					.absoluteaction{
+						.boxes{
+							height: 14em;
+						}
+						.action{
+							margin-top:6%;
+						}
+					}
+				}
+			}
 		}
 		.absoluteaction{
 			position:absolute;
+			z-index: 0;
 			top:0;
 			margin:{
 				left:-5.5em;
@@ -217,10 +300,12 @@ html{
 			}
 			width:120%;
 			.boxes{
+				transition: all .2s ease;
 				height: 9em;
 				border:2px solid rgba($primary,0.5);
 			}
 			.action{
+				transition: all .2s ease;
 				width:100%;
 				margin-top: 36%;
 				border-bottom:3px solid #ccc;
@@ -295,6 +380,18 @@ html{
 	}
 	.information{
 		.sectionaboutme{
+			.instagram_gallery{
+				a{
+					img{
+						transition: all .2s ease;
+					}
+					&:hover{
+						img{
+							transform: scale(1.04);
+						}
+					}
+				}
+			}
 			.profileimg{
 				position:absolute;
 				top:0;
@@ -358,11 +455,30 @@ html{
 			}
 		}
 		.categories{
+			div{
+				cursor: pointer;
+				padding-left:5px;
+				&:hover{
+					background-color: rgba(black,.1)
+				}
+			}
 			small{
 				font-weight: 600;
 				color:$primary;
 				position:absolute;
 				margin-left: 10px;
+			}
+		}
+		.banner{
+			a{
+				img{
+					transition: all .2s ease;
+				}
+				&:hover{
+					img{
+						transform:scale(1.05);
+					}
+				}
 			}
 		}
 		.recentpost{
@@ -393,6 +509,11 @@ html{
 		}
 		.tags{
 			.tag-item{
+				transition: all .2s ease;
+				cursor: pointer;
+				&:hover{
+					background-color:$phover;
+				}
 				padding:{
 					top:3px;
 					bottom:3px;
@@ -413,6 +534,18 @@ html{
 	}
 	img{
 		width:210px; height:210px;
+	}
+	.instagram_gallery{
+		a{
+			img{
+				transition: all .2s ease;
+			}
+			&:hover{
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}
 	}
 	.footericon{
 		a{
