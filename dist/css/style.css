@@ -400,11 +400,27 @@ html {
 .list-blog .information .banner a:hover img {
   transform: scale(1.05);
 }
+.list-blog .information .recentpost a {
+  text-decoration: none;
+}
+.list-blog .information .recentpost .row {
+  cursor: pointer;
+}
+.list-blog .information .recentpost .row .img-fluid {
+  transition: all 0.2s ease;
+}
+.list-blog .information .recentpost .row:hover .img-fluid {
+  transform: scale(1.03);
+}
+.list-blog .information .recentpost .row:hover h6 {
+  color: #c4ae69;
+}
 .list-blog .information .recentpost small {
   color: #777;
 }
 .list-blog .information .recentpost h6 {
   font-size: 0.8em;
+  color: black;
 }
 .list-blog .information .recentpost .inputicon {
   background-color: #b59f5b;

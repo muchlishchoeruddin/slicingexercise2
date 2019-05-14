@@ -482,11 +482,29 @@ html{
 			}
 		}
 		.recentpost{
+			a{
+				text-decoration: none;
+			}
+			.row{
+				cursor: pointer;
+				.img-fluid{
+					transition: all .2s ease;
+				}
+				&:hover{
+					.img-fluid{
+						transform: scale(1.03);
+					}
+					h6{
+						color:$phover;
+					}
+				}
+			}
 			small{
 				color:#777;
 			}
 			h6{
 				font-size: 0.8em;
+				color:black;
 			}
 			.inputicon{
 				background-color:$primary;
